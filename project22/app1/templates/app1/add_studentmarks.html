@@ -1,0 +1,25 @@
+{%extends 'app1/index.html'%}
+{%block content%}
+<form action="/add">
+    <table border="2" width="100%">
+        <tr>
+            <td>rollno</td>
+            <td><input type=text name="rno"></td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td><input type=text name="name"></td>
+        </tr>
+        <tr>
+            <td>subject1</td>
+            <td><input type=text name="sub1"></td>
+        </tr>
+        <tr>
+            <td>subject2</td>
+            <td><input type=text name="sub2"></td>
+        </tr>
+        <td><input type="submit" value="Add"></td>
+    </table> 
+</form>
+{{msg}}
+{%endblock%}

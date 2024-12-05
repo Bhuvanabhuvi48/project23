@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+</head>
+<body bgcolor="pink">
+    <table border="2">
+        
+            <tr>
+                <th>EMPNO:</th>
+                <th>EMPLOYEE NAME:</th>
+                <th>JOB:</th>
+                <th>SALARY:</th>
+            </tr>
+           {%for e in qs%}
+           <tr>
+           <td>{{e.empno}}</td>
+           <td>{{e.ename}}</td>
+           <td>{{e.job}}</td>
+           <td>{{e.sal}}</td>
+           </tr>
+           {%endfor%}
+           
+        
+    </table>
+
+
+    
+</body>
+</html>
